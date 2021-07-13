@@ -1,9 +1,9 @@
 <h1 align="center">
-  REST Countries API with color theme switcher
+  Tip calculator app
 </h1>
 
 <h3 align="center">
-<strong>Project based on <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank">Frontend Mentor Challenge </a></strong>
+<strong>Project based on <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX" target="_blank">Frontend Mentor Challenge </a></strong>
 </h3>
 
 <p align="center">
