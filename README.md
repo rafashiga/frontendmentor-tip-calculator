@@ -19,7 +19,7 @@
   <br>
   <img src="./images/website.png">
   <br>
-  <a href="https://shiga-tip-calculator.vercel.app/" target="_blank">
+  <a href="https://shiga-tip-calculator.netlify.app/" target="_blank">
     <h3 align="center"><b>VISIT</b></h3>
   </a>
   <br>
