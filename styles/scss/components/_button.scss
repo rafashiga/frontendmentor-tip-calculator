@@ -1,0 +1,31 @@
+.btn {
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.2rem;
+	transition: all 0.2s;
+	cursor: pointer;
+
+	&--primary {
+		background: $color-primary;
+		color: $color-cyan-800;
+	}
+
+	&--option {
+		font-size: 1.5rem;
+		background: $color-cyan-800;
+		color: $color-cyan-100;
+	}
+
+	&--active {
+		background: $color-primary;
+		color: $color-cyan-800;
+	}
+
+	&:hover {
+		background-color: $color-cyan-300;
+		color: $color-cyan-800;
+	}
+}

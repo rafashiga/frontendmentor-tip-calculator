@@ -1,0 +1,121 @@
+.home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	margin: 3rem 0;
+	margin-bottom: 3rem;
+
+	h1 {
+		font-size: 2rem;
+		line-height: 2.5rem;
+		text-align: center;
+		color: rgba($color-cyan-800, 0.75);
+	}
+
+	@include desktop-sm {
+		margin: 0 0 3rem;
+	}
+}
+
+.card {
+	background: $color-white;
+	padding: 2rem;
+	border-radius: 1.5rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	@include desktop-sm {
+		flex-direction: row;
+		gap: 2.5rem;
+	}
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.mt-xs {
+	margin-top: 0.25rem;
+}
+
+.form {
+	@include desktop-sm {
+		width: 50%;
+	}
+}
+
+.select-group {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	button,
+	input {
+		flex: 1;
+	}
+}
+
+.result {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-card {
+		background: $color-cyan-800;
+		border-radius: 1rem;
+		padding: 2rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		gap: 2.5rem;
+
+		@include desktop-sm {
+			width: 50%;
+		}
+	}
+
+	&__text {
+		color: $color-cyan-100;
+
+		span {
+			color: $color-cyan-400;
+			font-size: 0.75rem;
+		}
+	}
+
+	&__total {
+		color: $color-primary;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.attribution {
+	margin: 2rem 0;
+
+	font-size: 0.7rem;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}

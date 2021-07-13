@@ -1,0 +1,80 @@
+.label-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+label {
+	font-size: 1rem;
+	color: $color-cyan-700;
+	font-weight: 700;
+}
+
+.input-warning {
+	font-size: 1rem;
+	font-weight: 700;
+	color: $color-warning;
+
+	visibility: hidden;
+}
+
+.input {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background: $color-cyan-100;
+	padding: 0.5rem 1rem;
+
+	color: $color-cyan-800;
+	font-weight: 700;
+	font-size: 1.5rem;
+
+	text-align: right;
+
+	border: 2px solid transparent;
+
+	&::placeholder {
+		color: $color-cyan-400;
+	}
+
+	&:hover {
+		border: 2px solid $color-primary;
+	}
+
+	&:focus {
+		outline-color: $color-primary;
+	}
+
+	&--warning {
+		border: 2px solid $color-warning;
+	}
+}
+
+.input-icon-group {
+	position: relative;
+
+	input {
+		padding-left: 3rem;
+	}
+}
+
+.input-icon {
+	position: absolute;
+	top: 40%;
+	left: 1rem;
+}
+
+.input--custom {
+	padding: 0.5rem;
+	&::placeholder {
+		color: $color-cyan-700;
+	}
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}

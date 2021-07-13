@@ -1,0 +1,12 @@
+{
+  "name": "tip-calculator-app-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass:watch": "sass styles/scss/main.scss styles/css/style.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}
