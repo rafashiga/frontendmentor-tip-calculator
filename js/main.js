@@ -30,6 +30,10 @@ function calcTotal() {
 	}
 }
 
+function uncheckedTipRadio() {
+	radioTip.forEach((radio) => (radio.checked = false));
+}
+
 const currencyFormatter = new Intl.NumberFormat('en-US', {
 	style: 'currency',
 	currency: 'USD',
@@ -63,7 +67,7 @@ radioTip.forEach((option) => {
 });
 
 inputTipCustom.addEventListener('blur', (input) => {
-	radioTip.forEach((radio) => (radio.checked = false));
+	uncheckedTipRadio();
 	const value = input.target.value;
 	tipValue = value.length ? value / 100 : 0;
 
@@ -77,8 +81,8 @@ btnReset.addEventListener('click', () => {
 	inputBillValue = 0;
 	inputPeopleValue = 0;
 	tipValue = 0;
-	removeAllBtnActive();
+	uncheckedTipRadio();
 
-	tip.textContent = '$0.00';
+	tipAmount.textContent = '$0.00';
 	total.textContent = '$0.00';
 });
