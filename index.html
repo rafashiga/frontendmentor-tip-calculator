@@ -38,6 +38,7 @@
 									type="number"
 									class="input mt-xs"
 									name="bill"
+									id="bill"
 									placeholder="0"
 								/>
 								<img
@@ -50,13 +51,48 @@
 						<div class="input-group mb-2">
 							<label for="tip">Select Tip %</label>
 							<div class="select-group mt-xs">
-								<button type="button" class="btn btn--option">5%</button>
-								<button type="button" class="btn btn--option">10%</button>
-								<button type="button" class="btn btn--option">15%</button>
+								<input
+									type="radio"
+									name="tip"
+									id="5percentage"
+									class="tip-radio"
+									value="5"
+								/>
+								<label for="5percentage">5%</label>
+								<input
+									type="radio"
+									name="tip"
+									id="10percentage"
+									class="tip-radio"
+									value="10"
+								/>
+								<label for="10percentage">10%</label>
+								<input
+									type="radio"
+									name="tip"
+									id="15percentage"
+									class="tip-radio"
+									value="15"
+								/>
+								<label for="15percentage">15%</label>
 							</div>
 							<div class="select-group">
-								<button type="button" class="btn btn--option">25%</button>
-								<button type="button" class="btn btn--option">50%</button>
+								<input
+									type="radio"
+									name="tip"
+									id="25percentage"
+									class="tip-radio"
+									value="25"
+								/>
+								<label for="25percentage">25%</label>
+								<input
+									type="radio"
+									name="tip"
+									id="50percentage"
+									class="tip-radio"
+									value="50"
+								/>
+								<label for="50percentage">50%</label>
 								<input
 									type="number"
 									class="input input--custom"

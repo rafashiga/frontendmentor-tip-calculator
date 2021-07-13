@@ -13,17 +13,6 @@
 		color: $color-cyan-800;
 	}
 
-	&--option {
-		font-size: 1.5rem;
-		background: $color-cyan-800;
-		color: $color-cyan-100;
-	}
-
-	&--active {
-		background: $color-primary;
-		color: $color-cyan-800;
-	}
-
 	&:hover {
 		background-color: $color-cyan-300;
 		color: $color-cyan-800;

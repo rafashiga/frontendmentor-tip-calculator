@@ -1,6 +1,6 @@
 const inputPeople = document.getElementsByName('people')[0];
 const inputBill = document.getElementsByName('bill')[0];
-const btnTipOptions = document.querySelectorAll('.btn--option');
+const radioTip = document.getElementsByName('tip');
 const inputTipCustom = document.getElementsByName('tip_custom')[0];
 const btnReset = document.getElementById('btnReset');
 
@@ -30,10 +30,6 @@ function calcTotal() {
 	}
 }
 
-function removeAllBtnActive() {
-	btnOptions.forEach((item) => item.classList.remove('btn--active'));
-}
-
 const currencyFormatter = new Intl.NumberFormat('en-US', {
 	style: 'currency',
 	currency: 'USD',
@@ -57,19 +53,17 @@ inputPeople.addEventListener('blur', (input) => {
 	calcTotal();
 });
 
-btnTipOptions.forEach((option) => {
+radioTip.forEach((option) => {
 	option.addEventListener('click', () => {
-		removeAllBtnActive();
-		option.classList.add('btn--active');
 		inputTipCustom.value = '';
-		tipValue = option.textContent.replace('%', '') / 100;
+		tipValue = option.value / 100;
 
 		calcTotal();
 	});
 });
 
 inputTipCustom.addEventListener('blur', (input) => {
-	removeAllBtnActive();
+	radioTip.forEach((radio) => (radio.checked = false));
 	const value = input.target.value;
 	tipValue = value.length ? value / 100 : 0;
 

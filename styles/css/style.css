@@ -9,6 +9,28 @@ body {
   background: #c5e4e7;
 }
 
+.tip-radio {
+  display: none;
+  visibility: hidden;
+}
+.tip-radio + label {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: #00494d;
+  color: #f4fafa;
+  text-align: center;
+}
+.tip-radio:checked + label {
+  background: #26c0ab;
+  color: #00494d;
+}
+
 .label-group {
   display: flex;
   justify-content: space-between;
@@ -95,15 +117,6 @@ input::-webkit-inner-spin-button {
   background: #26c0ab;
   color: #00494d;
 }
-.btn--option {
-  font-size: 1.5rem;
-  background: #00494d;
-  color: #f4fafa;
-}
-.btn--active {
-  background: #26c0ab;
-  color: #00494d;
-}
 .btn:hover {
   background-color: #a1e8e0;
   color: #00494d;
@@ -172,8 +185,8 @@ header h1 {
 .select-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-.select-group button,
-.select-group input {
+.select-group input,
+.select-group label {
   flex: 1;
 }
 

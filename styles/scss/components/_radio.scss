@@ -1,0 +1,25 @@
+.tip-radio {
+	display: none;
+	visibility: hidden;
+
+	& + label {
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 0.5rem;
+		border: none;
+		border-radius: 0.2rem;
+		transition: all 0.2s;
+		cursor: pointer;
+
+		font-size: 1.5rem;
+		background: $color-cyan-800;
+		color: $color-cyan-100;
+
+		text-align: center;
+	}
+
+	&:checked + label {
+		background: $color-primary;
+		color: $color-cyan-800;
+	}
+}
